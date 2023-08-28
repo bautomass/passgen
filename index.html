@@ -1,0 +1,47 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="index.css">
+        <script src="https://kit.fontawesome.com/5dea7eb179.js" crossorigin="anonymous"></script> 
+    </head>
+<title>Password Generator</title>
+<body>
+<div class="container">
+    <h1 style="text-transform: uppercase;">Password Generator</h1>
+        <div class="characters-container">
+            <p id="spacing">Characters:
+                <span id="password-lenght"></span></p>
+                    <input type="range" 
+                        min="8" 
+                        max="32" 
+                    value="12" 
+                class="slider" 
+            id="myRange">
+        </div>
+            <div class="randomise-container">
+                <p id="spacing">Symbols<i class="fa-solid fa-arrows-left-right"></i> Letters
+                    <span id="randomlvl"></span></p>
+                        <input type="range" class="randomise" id="randomise"
+                        min="1" 
+                    max="9" 
+                value="4">
+            </div>
+                <button id="btn">Create Random Password</button>
+                    <p id="math-random"></p>
+                        <div class="metter-wrap" id="metter"><span id=metter-text></span></div>
+                            <button id="copy-value"><i class="fa-solid fa-copy"></i></button>
+                                <hr>
+                    <div class="save-passwords"> 
+                        <span id="save-socials">Save For:</span> 
+                            <button id="addPasswordFB"><i class="fa-brands fa-facebook-square"></i></button>
+                            <button id="addPasswordIG"><i class="fa-brands fa-instagram-square"></i></button>
+                            <button id="addPasswordTW"><i class="fa-brands fa-twitter-square"></i></button>
+                            <button id="addPasswordTK"><i class="fa-brands fa-tiktok"></i></button>
+                        <div id="dContainer"></div>
+                    </div>
+    </div>
+
+
+
+    <script src="getrandom.js"></script>
+    </body>
+</html>

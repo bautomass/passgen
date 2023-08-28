@@ -1,0 +1,212 @@
+:root {
+    --text-color: #cfdbd5;
+    --input-text-color: #353535;
+    --slider-color: #e8eddf;
+    --background-color: #353535;
+    --brands-background-color: #cfdbd5;
+    --border-color: #080808a2;
+    --save-border-color: rgb(5, 5, 5);
+    --social-border-color: rgba(59, 59, 59, 0.293);
+    --shadow-color: #cfdbd5;
+    --button-background-color: #e8eddf;
+    --button-color: #242423;
+    --border-angles: .175rem;
+
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body, html {
+    width: 100%;
+    height: 100vh;
+}
+
+h1{
+    width: clamp(50%, 500px, 350px);
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-size: calc(1rem + 2vw);
+    margin: auto;
+}
+
+.fa-arrows-left-right{
+    font-size: 25px;
+}
+.fa-brands {
+    color: var(--brands-background-color);
+}
+.fa-plus {
+    font-size: 20px;
+}
+
+#addPasswordFB, #addPasswordIG, #addPasswordTW, #addPasswordTK {
+    padding: 2px;
+    background-color: var(--background-color);
+    /* box-shadow: 1px 1px 2px var(--shadow-color); */
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    background-color: var(--background-color);
+}
+
+
+.container {
+    width: 100%;
+    height: 100vh;
+    align-items: center;
+    transform: translateY(5%);
+    
+}
+
+#spacing {
+    margin-bottom: -30px;
+}
+
+button {
+    font-size: calc(.4rem + 1vw);
+    background-color: var(--button-background-color);
+    color: var(--button-color);
+    cursor: pointer;
+    padding: 10px;
+    margin-top: 20px;
+    /* box-shadow: 2px 2px 4px var(--shadow-color); */
+    border: .01rem solid var(--border-color);
+    border-radius: var(--border-angles);
+}
+
+button:active {
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+input {
+    padding-left: 5px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    color: var(--input-text-color);
+    font-size: calc(.5rem + .6vw);;
+}
+
+#save-password {
+    font-size: calc(.6rem + .6vw);
+    padding: 2px;
+    /* box-shadow: 1px 1px 2px var(--shadow-color); */
+    border: 1px dotted var(--text-color);
+    bottom: -10px;
+}
+
+#save-socials {
+    font-size: calc(.6rem + .6vw);
+    color: var(--text-color);
+}
+
+.meter-copy {
+    display: flex;
+}
+
+#metter {
+    width: 200px;
+    height: 30px;
+    border-radius: var(--border-angles);
+    margin: auto;
+    margin-top: -30px;
+    margin-bottom: 30px;
+    padding: 2.5px;
+}
+
+#metter-text {
+    font-size: 16px;
+}
+
+#copy-value {
+    height: 25px;
+    padding:5px;
+    margin: auto;
+    margin-top: -58px;
+    margin-left: 280px;
+    font-size: calc(.2rem + .5vw);
+    /* box-shadow: 1px 1px 2px var(--shadow-color); */
+    display: none;
+}
+
+p {
+    color: var(--text-color);
+    height:100px;
+    font-size: calc(.6rem + 1.3vw);
+    padding-top: 20px;
+}
+
+.characters-container{
+    margin-top:50px;
+}
+
+.slider, .randomise {
+    -webkit-appearance: none;
+    width: 20%;
+    height: 5px;
+    background: #f5cb5c;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+  }
+  
+  .slider:hover { opacity: 1; }
+  .randomise:hover { opacity: 1; }
+  
+  .slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    background: var(--slider-color);
+    cursor: pointer;
+    border-radius: var(--border-angles);
+  }
+  
+  .slider::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    background: var(--slider-color);
+    cursor: pointer;
+  }
+
+  .randomise::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    background: var(--slider-color);
+    cursor: pointer;
+  }
+
+  .randomise::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    margin-left: -5px;
+    background: var(--slider-color);
+    cursor: pointer;
+    border-radius: var(--border-angles);
+  }
+
+  #dContainer {
+    width: 450px;
+    height: auto;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 1px solid var(--social-border-color);
+    border-radius: var(--border-angles);
+    padding: 10px;
+    display:none;
+}
